@@ -10,6 +10,13 @@ $(function () {
   });
 });
 
+$(function () {
+  $('#skills-list').sortable({
+    placeholder: 'ui-state-highlight',
+  });
+  $('#skills-list').disableSelection();
+});
+
 var printSkills = function (name, date) {
   var listEl = $('<li>');
   var listDetail = name.concat(' on ', date);
